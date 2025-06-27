@@ -693,7 +693,7 @@ class _BarcodeScannerViewState extends State<BarcodeScannerView> {
     String origIp = await _getIpAddress();
     String? androidId = await getAndroidId();
 
-    final url = Uri.parse('https://scnapi.secuqr.com/api/vldqr ');
+    final url = Uri.parse('https://scnapi.secuqr.com/api/vldqr');
     final request = http.MultipartRequest('POST', url);
     request.headers.addAll({"X-API-Key": "SECUQR"});
 
